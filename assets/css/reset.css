@@ -15,6 +15,10 @@
     --btn-theme-page-image-dark: url("../images/icons/btn-theme-dark-active.png");
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding: 3rem 1rem;
     max-width: 1200px;

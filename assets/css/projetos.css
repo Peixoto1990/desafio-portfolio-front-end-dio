@@ -32,7 +32,8 @@
 }
 
 .projetos-lista__item--imagem {
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -83,6 +84,7 @@
     .projetos-lista__item--imagem {
         margin: 0;
         max-width: initial;
+        width: initial;
     }
 
     .projetos-lista__item--imagem, .projetos-lista__item--conteudo {

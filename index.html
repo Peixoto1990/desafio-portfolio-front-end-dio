@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- style -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/btnTheme.css">
     <link rel="stylesheet" href="assets/css/header.css">
@@ -22,11 +23,11 @@
         <section class="header-logo"><a href="#">Aluilson Peixoto</a></section>
         <nav class="header-nav page-dark">
             <ul class="header-nav__list">
-                <li><a class="header-nav__list--home" href="#"></a></li>
-                <li><a class="header-nav__list--projetos" href="#"></a></li>
-                <li><a class="header-nav__list--sobreMim" href="#"></a></li>
-                <li><a class="header-nav__list--contato" href="#"></a></li>
-                <li><a class="header-nav__list--creditos" href="#"></a></li>
+                <li><a class="header-nav__list--home" href="#page"></a></li>
+                <li><a class="header-nav__list--projetos" href="#projetos"></a></li>
+                <li><a class="header-nav__list--sobreMim" href="#sobreMim"></a></li>
+                <li><a class="header-nav__list--contato" href="#contato"></a></li>
+                <li><a class="header-nav__list--creditos" href="#creditos"></a></li>
             </ul>
         </nav>
     </header>
@@ -56,8 +57,8 @@
         </div>
     </section>
 
-    <main class="page-dark container">
-        <section class="projetos">
+    <main class="page-dark">
+        <section id="projetos" class="projetos container">
             <h2>Projetos</h2>
             <ul class="projetos-lista">
                 <li class="projetos-lista__item">
@@ -143,8 +144,10 @@
         </section>
     </main>
 
-    <section class="sobre-mim container">
-        <h2>Sobre Mim</h2>
+    <section class="sobre-mim page-dark">
+        <div class="sobre-mim--conteudo container">
+            <h2>Sobre Mim</h2>
+        </div>
     </section>
 
     <script src="assets/scripts/changeTheme.js"></script>

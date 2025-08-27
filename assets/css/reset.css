@@ -7,12 +7,19 @@
     --btn-theme-page-image: url("../images/icons/btn-theme-light-active.png");
 
     --background-page-dark: #121212;
-    --background-section-dark: #1E1E1E;
+    --background-section-dark: #919191;
     --background-botao: #007BFF;
     --border-color: #333333;
     --color-texto-destaque-dark: #EAEAEA;
     --color-texto-normal-dark: #A0A0A0;
     --btn-theme-page-image-dark: url("../images/icons/btn-theme-dark-active.png");
+}
+
+.container {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    border-radius: 5px;
 }
 
 .page {
@@ -45,11 +52,11 @@ h1, h2, h3, h4, h5, h6, button, a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 h3 {

@@ -1,0 +1,95 @@
+.projetos h2 {
+    margin-bottom: 3rem;
+}
+
+.projetos-lista {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+.projetos-lista--botao {
+    display: block;
+    margin: auto;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-botao);
+    color: var(--color-texto-destaque-dark);
+    font-weight: bold;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projetos-lista__item {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.projetos-lista__item--imagem {
+    max-width: 300px;
+    margin: auto;
+}
+
+.projetos-lista__item--imagem img {
+    max-width: 100%;
+}
+
+.projetos-lista__item--conteudo {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.projetos-lista__item--conteudo__lista-imagens {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projetos-lista__item--conteudo__lista-imagens li {
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    border: 1px solid #ffffff;
+}
+
+.projetos-lista__item--conteudo--botoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projetos-lista__item--conteudo--botoes a, .projetos-lista__item--conteudo--botoes button {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-botao);
+    color: var(--color-texto-destaque-dark);
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 990px) {
+    .projetos-lista__item {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
+    .projetos-lista__item--imagem {
+        margin: 0;
+        max-width: initial;
+    }
+
+    .projetos-lista__item--imagem, .projetos-lista__item--conteudo {
+        flex: 0 1 35%;
+    }
+
+    .projetos-lista__item--conteudo {
+        justify-self: flex-end;
+    }
+}

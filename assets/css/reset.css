@@ -1,0 +1,83 @@
+:root {
+    font-size: 16px;
+    --font-destaque: "Archivo", sans-serif;
+    --font-normal: "Inter", sans-serif;
+
+    --background-page: #FFFFFF;
+    --btn-theme-page-image: url("../images/icons/btn-theme-light-active.png");
+
+    --background-page-dark: #121212;
+    --background-section-dark: #1E1E1E;
+    --background-botao: #007BFF;
+    --border-color: #333333;
+    --color-texto-destaque-dark: #EAEAEA;
+    --color-texto-normal-dark: #A0A0A0;
+    --btn-theme-page-image-dark: url("../images/icons/btn-theme-dark-active.png");
+}
+
+.page {
+    background-color: var(--background-page) !important;
+}
+
+.section {
+    background-color: var(--background-page) !important;
+}
+
+.page-dark {
+    background-color: var(--background-page-dark);
+}
+
+.section-dark {
+    background-color: var(--background-section-dark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-normal);
+    transition: .3s background ease-in-out, .3s color ease-in-out;
+    color: var(--color-texto-normal-dark);
+}
+
+h1, h2, h3, h4, h5, h6, button, a {
+    color: var(--color-texto-destaque-dark);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a, li, button, p {
+    font-size: 1.125rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--color-texto-destaque-dark);
+}
+
+button, fieldset {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}

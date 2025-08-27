@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.header-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+.header-nav__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-nav__list li {
+    width: 40px;
+    height: 40px;
+}
+
+.header-nav__list li:first-child {
+    order: 1;
+}
+
+.header-nav__list li:nth-child(4) {
+    order: 2;
+}
+
+.header-nav__list li:last-child {
+    order: 2;
+}
+
+.header-nav__list a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: invert();
+    border-radius: 5px;
+}
+
+.header-nav__list--sobreMim {
+    background-image: url("../images/icons/btn-mobile-sobre-mim.png");
+}
+
+.header-nav__list--projetos {
+    background-image: url("../images/icons/btn-mobile-projetos.png");
+}
+
+.header-nav__list--contato {
+    background-image: url("../images/icons/btn-mobile-contato.png");
+}
+
+.header-nav__list--home {
+    background-image: url("../images/icons/btn-mobile-home.png");
+}
+
+.header-nav__list--creditos {
+    background-image: url("../images/icons/btn-mobile-home.png");
+}
+
+@media screen and (min-width: 990px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .header-nav {
+        position: static;
+        width: initial;
+    }
+
+    .header-nav__list {
+        gap: 1.2rem;
+    }
+
+    .header-nav__list li {
+        order: initial !important;
+        width: initial;
+        height: initial;
+    }
+
+    .header-nav__list a {
+        background-image: none;
+        filter: none;
+        border-radius: 0;
+    }
+
+    .header-nav__list a::after {
+        display: inline;
+    }
+
+    .header-nav__list--home::after {
+        content: "Home";
+    }
+
+    .header-nav__list--projetos::after {
+        content: "Projetos";
+    }
+
+    .header-nav__list--sobreMim::after {
+        content: "Sobre Mim";
+    }
+
+    .header-nav__list--contato::after {
+        content: "Contato";
+    }
+
+    .header-nav__list--creditos::after {
+        content: "Créditos";
+    }
+}

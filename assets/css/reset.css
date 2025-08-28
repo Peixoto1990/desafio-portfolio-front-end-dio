@@ -3,13 +3,17 @@
     --font-destaque: "Archivo", sans-serif;
     --font-normal: "Inter", sans-serif;
 
-    --background-page: #FFFFFF;
+    --background-page: #F9F9F9;
+    --background-section: #FFFFFF;
+    --color-texto-destaque: #181818;
+    --color-texto-normal: #686868;
+    --border-color: #EAEAEA;
     --btn-theme-page-image: url("../images/icons/btn-theme-light-active.png");
 
     --background-page-dark: #121212;
     --background-section-dark: #919191;
     --background-botao: #007BFF;
-    --border-color: #333333;
+    --border-color-dark: #333333;
     --color-texto-destaque-dark: #EAEAEA;
     --color-texto-normal-dark: #A0A0A0;
     --btn-theme-page-image-dark: url("../images/icons/btn-theme-dark-active.png");
@@ -19,15 +23,31 @@ body {
     scroll-behavior: smooth;
 }
 
+.link-active {
+    border-bottom: 2px solid var(--border-color-dark);
+}
+
 .container {
     padding: 3rem 1rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 4rem auto;
     border-radius: 5px;
 }
 
+.filter-invert-off {
+    filter: none !important;
+}
+
 .page {
     background-color: var(--background-page) !important;
+}
+
+.texto-destaque {
+    color: var(--color-texto-destaque) !important;
+}
+
+.texto {
+    color: var(--color-texto-normal) !important;
 }
 
 .section {
@@ -40,6 +60,20 @@ body {
 
 .section-dark {
     background-color: var(--background-section-dark);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.github {
+    background-image: url("../images/icons/github.png");
+    filter: invert();
 }
 
 * {

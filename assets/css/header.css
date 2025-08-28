@@ -1,9 +1,19 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 2rem 1rem;
     margin-bottom: 4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    border-bottom: 1px solid var(--border-color-dark);
+}
+
+.header-logo a {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .header-nav {
@@ -46,6 +56,7 @@
     background-size: cover;
     filter: invert();
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .header-nav__list--sobreMim {
@@ -70,7 +81,7 @@
 
 @media screen and (min-width: 990px) {
     .header {
-        justify-content: space-around;
+        padding: 2rem 3rem;
     }
 
     .header-nav {

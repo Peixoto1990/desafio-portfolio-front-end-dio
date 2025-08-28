@@ -15,32 +15,36 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/apresentacao.css">
     <link rel="stylesheet" href="assets/css/projetos.css">
+    <link rel="stylesheet" href="assets/css/sobreMim.css">
+    <link rel="stylesheet" href="assets/css/cursos.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <title>Portfólio Front-End</title>
 </head>
 <body id="page" class="page-dark">
-    <button title="Botão de transição de tema claro para escuro" id="changeTheme" class="btn-theme-dark"></button>
     <header class="header page-dark">
         <section class="header-logo"><a href="#">Aluilson Peixoto</a></section>
         <nav class="header-nav page-dark">
             <ul class="header-nav__list">
-                <li><a class="header-nav__list--home" href="#page"></a></li>
+                <li><a class="header-nav__list--home" href="#"></a></li>
                 <li><a class="header-nav__list--projetos" href="#projetos"></a></li>
                 <li><a class="header-nav__list--sobreMim" href="#sobreMim"></a></li>
                 <li><a class="header-nav__list--contato" href="#contato"></a></li>
                 <li><a class="header-nav__list--creditos" href="#creditos"></a></li>
             </ul>
         </nav>
+        <button title="Botão de transição de tema claro para escuro" id="changeTheme" class="btn-theme-dark"></button>
     </header>
 
     <section class="apresentacao page-dark">
         <div class="apresentacao-conteudo container">
-            <h1>Transformando conhecimento em soluções reais</h1>
+            <h1>Transformando conhecimento <br> em soluções reais</h1>
             <p>Olá! Meu nome é <strong>Aluilson Peixoto</strong>. Sou desenvolvedor front-end com experiência em HTML, CSS,
             JavaScript e React. Tenho paixão por criar interfaces funcionais, intuitivas e visualmente atraentes, sempre
             buscando unir estética e desempenho em cada projeto.
             </p>
             <section class="apresentacao-conteudo--video">
-
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CrBO_Z5ao4Q?si=8qJu83hmJTYnA2V0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
             <a href="#" target="_self">Veja meus projetos</a>
         </div>
@@ -144,12 +148,116 @@
         </section>
     </main>
 
-    <section class="sobre-mim page-dark">
-        <div class="sobre-mim--conteudo container">
+    <section id="sobreMim" class="sobre-mim page-dark">
+        <div class="container">
             <h2>Sobre Mim</h2>
+            <div class="sobre-mim--conteudo">
+                <div class="sobre-mim--imagem">
+                    <img src="https://www.github.com/Peixoto1990.png" alt="Foto do Aluilson Peixoto">
+                </div>
+                <div class="sobre-mim--texto">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati dicta unde eum, facilis nostrum tenetur dolores vero sed quo, blanditiis perspiciatis quis magnam provident corrupti nesciunt repellendus, consequatur deleniti cupiditate!
+                    </p>
+                    <ul class="sobre-mim--listaIdiomas">
+                        <li>Português BR</li>
+                        <li>Inglês - Básico</li>
+                    </ul>
+                    <a class="icon github" href="https://www.github.com/Peixoto1990" target="_blank"></a>
+                    <div class="sobre-mim--botoes">
+                        <a href="#contato" target="_self">Conecte-se Comigo</a>
+                        <a href="#" target="_blank">Currículo</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <section class="cursos page-dark">
+        <div class="cursos-conteudo container">
+            <h2>Cursos</h2>
+            <ul class="cursos-lista">
+                <li class="cursos-lista__item">
+                    <details>
+                        <summary>JS Dev</summary>
+                        <div class="cursos-lista__item--conteudo">
+                            <div>
+                                <h4>Alura: &ThinSpace;</h4>
+                                <span>Início Junho/2025</span>
+                            </div>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, vitae. Ipsa commodi ipsum cupiditate, earum molestias nobis! Voluptatem distinctio magni incidunt asperiores delectus earum velit unde accusamus provident tempora. Consequatur.
+                            </p>
+                            <ul class="cursos-lista__item--conteudo-lista">
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="cursos-lista__item">
+                    <details>
+                        <summary>JS Dev</summary>
+                        <div class="cursos-lista__item--conteudo">
+                            <div>
+                                <h4>Alura: &ThinSpace;</h4>
+                                <span>Início Junho/2025</span>
+                            </div>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, vitae. Ipsa commodi ipsum cupiditate, earum molestias nobis! Voluptatem distinctio magni incidunt asperiores delectus earum velit unde accusamus provident tempora. Consequatur.
+                            </p>
+                            <ul class="cursos-lista__item--conteudo-lista">
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+                <li class="cursos-lista__item">
+                    <details>
+                        <summary>JS Dev</summary>
+                        <div class="cursos-lista__item--conteudo">
+                            <div>
+                                <h4>Alura: &ThinSpace;</h4>
+                                <span>Início Junho/2025</span>
+                            </div>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, vitae. Ipsa commodi ipsum cupiditate, earum molestias nobis! Voluptatem distinctio magni incidunt asperiores delectus earum velit unde accusamus provident tempora. Consequatur.
+                            </p>
+                            <ul class="cursos-lista__item--conteudo-lista">
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                                <li>Habilidade</li>
+                            </ul>
+                        </div>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato" class="contato page-dark">
+        <div class="contato-conteudo container">
+            <h2>Contato</h2>
+            <p>
+                Estou disponível para serviços e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais.
+            </p>
+            <a class="icon github" href="https://www.github.com/Peixoto1990" target="_blank"></a>
+            <a class="contato-conteudo--botao" href="mailto:teste@gmail.com">teste@gmail.com</a>
+        </div>
+    </section>
+
+    <footer id="creditos" class="footer page-dark">
+        <div class="footer-conteudo container">
+            <p>
+                &copy;2025 Todos os Direitos Resevados Aluilson Peixoto. Desenvolvido por <strong>Aluilson Peixoto</strong>.
+            </p>
+        </div>
+    </footer>
+
     <script src="assets/scripts/changeTheme.js"></script>
+    <script src="assets/scripts/navbar.js"></script>
 </body>
 </html>

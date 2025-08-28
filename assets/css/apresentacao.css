@@ -1,5 +1,6 @@
 .apresentacao {
     border-radius: 5px;
+    margin-top: 6rem;
 }
 
 .apresentacao-conteudo h1 {
@@ -10,15 +11,21 @@
     max-width: 600px;
     margin: 2rem auto 0 auto;
     height: 230px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-dark);
     border-radius: 8px;
+}
+
+.apresentacao-conteudo--video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
 }
 
 .apresentacao-conteudo a {
     display: block;
     margin: 3rem auto 0 auto;
     width: max-content;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-dark);
     padding: 1.5rem 2rem;
     background-color: var(--background-botao);
     border-radius: 8px;
@@ -81,6 +88,7 @@
     .tecnologias-conteudo {
         display: flex;
         justify-content: space-evenly;
+        padding: 4rem 1rem;
     }
 
     .tecnologias-conteudo h2, .tecnologias-lista {

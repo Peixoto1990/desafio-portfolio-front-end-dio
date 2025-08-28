@@ -1,0 +1,30 @@
+.contato-conteudo {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contato-conteudo p {
+    text-align: center;
+}
+
+.contato-conteudo--botao {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    padding: 1rem 0;
+    border: 1px solid var(--border-color-dark);
+    background-color: var(--background-botao);
+    color: var(--color-texto-destaque-dark);
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 990px) {
+    .contato-conteudo p {
+        width: 100%;
+        max-width: 800px;
+    }
+}

@@ -1,12 +1,18 @@
+.sobre-mim {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .sobre-mim--imagem {
-    width: 100%;
+    max-height: 300px;
     max-width: 400px;
-    margin: auto;
+    align-self: center;
 }
 
 .sobre-mim--imagem img {
     max-width: 100%;
     border-radius: 50%;
+    max-height: inherit;
 }
 
 .sobre-mim h2 {
@@ -49,7 +55,7 @@
     font-weight: bold;
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 768px) {
     .sobre-mim div.container {
         box-shadow: 0px 0px 10px #007bff7c;
         padding: 4rem 3rem;
@@ -66,6 +72,7 @@
         width: initial;
         max-width: initial;
         margin: 0;
+        align-self: initial;
     }
 
     .sobre-mim--texto {

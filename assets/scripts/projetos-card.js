@@ -1,67 +1,71 @@
-const dataCards = [
-    {
-        "id": 0,
-        "nome": "Organo",
-        "capa": "assets/images/projetos-card/organo.png",
-        "descricao": "Esse projeto é um teste de descrição",
-        "repositorio": "https://github.com/Peixoto1990/organo",
-        "tecnologias": [
-            {
-                "nome": "HTML 5",
-                "icone": "assets/images/icons/html-5.png"
-            },
-            {
-                "nome": "CSS 3",
-                "icone": "assets/images/icons/css-3.png"
-            },
-            {
-                "nome": "Javascript",
-                "icone": "assets/images/icons/js.png"
-            },
-            {
-                "nome": "ReactJS",
-                "icone": "assets/images/icons/react.png"
-            }
-        ],
-        "funcionalidades": [
-            "teste",
-            "teste",
-            "teste"
-        ],
-        "video": "assets/videos/organo-video.webm"
-    },
-    {
-        "id": 0,
-        "nome": "Organo",
-        "capa": "assets/images/projetos-card/organo.png",
-        "descricao": "Esse projeto é um teste de descrição",
-        "repositorio": "https://github.com/Peixoto1990/organo",
-        "tecnologias": [
-            {
-                "nome": "HTML 5",
-                "icone": "assets/images/icons/html-5.png"
-            },
-            {
-                "nome": "CSS 3",
-                "icone": "assets/images/icons/css-3.png"
-            },
-            {
-                "nome": "Javascript",
-                "icone": "assets/images/icons/js.png"
-            },
-            {
-                "nome": "ReactJS",
-                "icone": "assets/images/icons/react.png"
-            }
-        ],
-        "funcionalidades": [
-            "teste",
-            "teste",
-            "teste"
-        ],
-        "video": "assets/videos/organo-video.webm"
-    }
-]
+function criaDados() {
+    const dataCards = [
+        {
+            "id": 0,
+            "nome": "Organo",
+            "capa": "assets/images/projetos-card/organo.png",
+            "descricao": "Organo é um aplicativo desenvolvido com ReactJS. Trata-se de um app que cadastra e gerencia equipes de colaboradores em uma determinada empresa.",
+            "repositorio": "https://github.com/Peixoto1990/organo",
+            "tecnologias": [
+                {
+                    "nome": "HTML 5",
+                    "icone": "assets/images/icons/html-5.png"
+                },
+                {
+                    "nome": "CSS 3",
+                    "icone": "assets/images/icons/css-3.png"
+                },
+                {
+                    "nome": "Javascript",
+                    "icone": "assets/images/icons/js.png"
+                },
+                {
+                    "nome": "ReactJS",
+                    "icone": "assets/images/icons/react.png"
+                }
+            ],
+            "funcionalidades": [
+                "Cadastrar novos colaboradores",
+                "Excluir colaboradores",
+                "Cadastrar novos times"
+            ],
+            "video": "assets/videos/organo-video.webm"
+        },
+        {
+            "id": 1,
+            "nome": "Organo",
+            "capa": "assets/images/projetos-card/organo.png",
+            "descricao": "Organo é um aplicativo desenvolvido com ReactJS. Trata-se de um app que cadastra e gerencia equipes de colaboradores em uma determinada empresa.",
+            "repositorio": "https://github.com/Peixoto1990/organo",
+            "tecnologias": [
+                {
+                    "nome": "HTML 5",
+                    "icone": "assets/images/icons/html-5.png"
+                },
+                {
+                    "nome": "CSS 3",
+                    "icone": "assets/images/icons/css-3.png"
+                },
+                {
+                    "nome": "Javascript",
+                    "icone": "assets/images/icons/js.png"
+                },
+                {
+                    "nome": "ReactJS",
+                    "icone": "assets/images/icons/react.png"
+                }
+            ],
+            "funcionalidades": [
+                "Cadastrar novos colaboradores",
+                "Excluir colaboradores",
+                "Cadastrar novos times"
+            ],
+            "video": "assets/videos/organo-video.webm"
+        }
+    ]
+
+    return dataCards;
+}
 
 function criaCard(data) {
     return `
@@ -119,4 +123,4 @@ function defineCards(dataCards) {
     listaProjetos.innerHTML += htmlElementCards;
 }
 
-defineCards(dataCards);
+defineCards(criaDados());

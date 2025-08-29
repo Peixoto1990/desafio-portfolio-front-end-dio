@@ -79,7 +79,7 @@
     background-image: url("../images/icons/btn-mobile-home.png");
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 890px) {
     .header {
         padding: 2rem 3rem;
     }

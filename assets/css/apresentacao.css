@@ -8,10 +8,10 @@
 }
 
 .apresentacao-conteudo--video {
-    max-width: 600px;
+    max-width: 800px;
     margin: 2rem auto 0 auto;
     height: 230px;
-    border: 1px solid var(--border-color-dark);
+    border: 3px solid var(--border-color-dark);
     border-radius: 8px;
 }
 
@@ -67,7 +67,7 @@
     background-image: url("../images/icons/react.png");
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 890px) {
     .apresentacao-conteudo {
         padding: 4rem 1rem;
     }
@@ -82,7 +82,7 @@
     }
 
     .apresentacao-conteudo--video {
-        height: 400px;
+        height: 450px;
     }
 
     .tecnologias-conteudo {

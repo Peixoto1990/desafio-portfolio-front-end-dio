@@ -12,6 +12,14 @@
     gap: 1rem;
 }
 
+.cursos-lista__item--conteudo-lista h4 {
+    margin-bottom: .5rem;
+}
+
+.cursos-lista__item--conteudo-lista li {
+    list-style: inside disc;
+}
+
 .cursos-lista__item {
     border-bottom: 1px solid var(--border-color-dark);
     border-radius: 8px;
@@ -66,11 +74,11 @@
     display: inline-block;
 }
 
-.cursos-lista__item--conteudo h4, .cursos-lista__item--conteudo p, .cursos-lista__item--conteudo li, .cursos-lista__item--conteudo span {
-    color: var(--color-texto-destaque-dark);
+.cursos-lista__item--conteudo h4, .cursos-lista__item--conteudo p, .cursos-lista__item--conteudo li, .cursos-lista__item--conteudo span, .cursos-lista__item--conteudo strong {
+    color: var(--color-texto-destaque-dark) !important;
 }
 
-@media screen and (min-width: 890px) {
+@media screen and (min-width: 768px) {
     .cursos-lista {
         flex-flow: row wrap;
         justify-content: space-evenly;
@@ -78,7 +86,7 @@
     }
 
     .cursos-lista__item {
-        flex: 0 1 30%;
+        flex: 0 1 70%;
         align-self: flex-start;
     }
 }

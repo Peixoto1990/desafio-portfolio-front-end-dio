@@ -1,3 +1,34 @@
+.footer-conteudo {
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.creditos {
+    margin: 0 auto 2rem auto;
+    width: max-content;
+}
+
+.creditos li {
+    list-style: inside disc;
+}
+
+.creditos li a {
+    font-size: .8rem;
+}
+
+.creditos h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .footer-conteudo p {
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-conteudo {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }

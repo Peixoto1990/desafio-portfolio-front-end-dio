@@ -6,7 +6,8 @@
 
 .creditos {
     margin: 0 auto 2rem auto;
-    width: max-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .creditos li {

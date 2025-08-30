@@ -77,7 +77,7 @@
 }
 
 .header-nav__list--creditos {
-    background-image: url("../images/icons/btn-mobile-home.png");
+    background-image: url("../images/icons/btn-footer.png");
 }
 
 @media screen and (min-width: 890px) {

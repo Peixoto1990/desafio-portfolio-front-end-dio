@@ -34,6 +34,14 @@ body {
     border-radius: 5px;
 }
 
+.button {
+    transition: .3s transform ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
 .filter-invert-off {
     filter: none !important;
 }

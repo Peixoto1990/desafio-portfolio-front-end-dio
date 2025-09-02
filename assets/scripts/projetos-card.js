@@ -109,8 +109,8 @@ function criaCard(data) {
                             ${data.tecnologias.map((tecnologia) => `<li><img src=${tecnologia.icone} alt=${tecnologia.nome} /></li>`).join("")}
                         </ul>
                         <div class="projetos-lista__item--conteudo--botoes">
-                            <button type="button" onclick=modalCard("${data.video}")>Prévia Projeto</button>
-                            <a href=${data.repositorio} target="_blank">Repositório</a>
+                            <button class="button" type="button" onclick=modalCard("${data.video}")>Prévia Projeto</button>
+                            <a class="button" href=${data.repositorio} target="_blank">Repositório</a>
                         </div>
                     </div>
                 </li>

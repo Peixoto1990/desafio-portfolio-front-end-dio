@@ -53,10 +53,11 @@
     font-size: 1.5rem;
     float: right;
     transition: .1s transform ease-in-out;
+    transform: rotate(180deg);
 }
 
 .cursos-lista details[open] summary::after {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
 
 .cursos-lista__item--conteudo {

@@ -11,7 +11,7 @@
 }
 
 .creditos li {
-    list-style: inside disc;
+    text-align: center;
 }
 
 .creditos li a {

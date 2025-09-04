@@ -17,9 +17,7 @@
     --color-texto-destaque-dark: #EAEAEA;
     --color-texto-normal-dark: #A0A0A0;
     --btn-theme-page-image-dark: url("../images/icons/btn-theme-dark-active.png");
-}
 
-body {
     scroll-behavior: smooth;
 }
 

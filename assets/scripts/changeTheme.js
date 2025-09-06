@@ -35,4 +35,4 @@ function changeTheme(ev) {
     btnTheme.classList.toggle("btn-theme");
 }
 
-window.matchMedia('(prefers-color-scheme: light)').matches ? changeTheme() : null;
+window.onload = () => window.matchMedia('(prefers-color-scheme: light)').matches ? changeTheme() : null;
